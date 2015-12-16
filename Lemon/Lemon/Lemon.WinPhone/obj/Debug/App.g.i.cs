@@ -11,7 +11,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Lemon.WinPhone
+namespace App.WinPhone
 {
 #if !DISABLE_XAML_GENERATED_MAIN
     public static class Program

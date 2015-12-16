@@ -5,7 +5,7 @@
 //
 using Foundation;
 
-namespace Lemon.iOS
+namespace App.iOS
 {
 	[Register ("ViewController")]
 	partial class ViewController
