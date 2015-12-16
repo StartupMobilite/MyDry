@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Xamarin.Forms;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -20,14 +21,26 @@ namespace Lemon.WinPhone
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
+
+   /* public partial class MainPage : FormsApplicationPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
+            Forms.Init();
+            LoadApplication(new Lemon.App());
+        }
+    }*/
+}
+    /*
     public sealed partial class MainPage : Page
     {
         int count = 1;
-
         public MainPage()
         {
             this.InitializeComponent();
-
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
@@ -50,5 +63,4 @@ namespace Lemon.WinPhone
                 Button.Content = title;
             };
         }
-    }
-}
+    }*/
