@@ -10,7 +10,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Lemon.WinPhone
+namespace App.WinPhone
 {
     partial class MainPage : global::Windows.UI.Xaml.Controls.Page
     {
