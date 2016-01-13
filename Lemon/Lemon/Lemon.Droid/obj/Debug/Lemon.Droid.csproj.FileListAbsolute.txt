@@ -27,3 +27,6 @@ C:\Users\anne-\Documents\MyDry\Lemon\Lemon\Lemon.Droid\obj\Debug\res\drawable-xx
 C:\Users\anne-\Documents\MyDry\Lemon\Lemon\Lemon.Droid\obj\Debug\res\drawable-xxxhdpi\icon.png
 C:\Users\anne-\Documents\MyDry\Lemon\Lemon\Lemon.Droid\obj\Debug\R.cs.flag
 C:\Users\anne-\Documents\MyDry\Lemon\Lemon\Lemon.Droid\obj\Debug\uploadflags.txt
+C:\Users\Jean\Documents\GitHub\MyDry\Lemon\Lemon\Lemon.Droid\obj\Debug\Lemon.Droid.csprojResolveAssemblyReference.cache
+C:\Users\Jean\Documents\GitHub\MyDry\Lemon\Lemon\Lemon.Droid\obj\Debug\Lemon.Droid.dll
+C:\Users\Jean\Documents\GitHub\MyDry\Lemon\Lemon\Lemon.Droid\obj\Debug\Lemon.Droid.pdb
