@@ -15,6 +15,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+using Xamarin.Forms;
+using Application = Windows.UI.Xaml.Application;
+using NavigationEventArgs = Windows.UI.Xaml.Navigation.NavigationEventArgs;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -23,6 +26,7 @@ namespace Lemon.WinPhone
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
+    /// 
     public sealed partial class App : Application
     {
         private TransitionCollection transitions;
@@ -45,24 +49,27 @@ namespace Lemon.WinPhone
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            Xamarin.Forms.Forms.Init(e);
+            if (e.PreviousExecutionState == ApplicationExecutionState.Terminated) { }
+
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-
-            Frame rootFrame = Window.Current.Content as Frame;
+            UIElement rootFrame = Window.Current.Content as Windows.UI.Xaml.Controls.Frame;
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
             if (rootFrame == null)
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
-                rootFrame = new Frame();
+                rootFrame = new Windows.UI.Xaml.Controls.Frame();
 
                 // TODO: change this value to a cache size that is appropriate for your application
-                rootFrame.CacheSize = 1;
+                //   rootFrame.CacheSize = 1;
+
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
@@ -72,9 +79,10 @@ namespace Lemon.WinPhone
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
             }
-
+            /*
             if (rootFrame.Content == null)
             {
+
                 // Removes the turnstile navigation for startup.
                 if (rootFrame.ContentTransitions != null)
                 {
@@ -95,20 +103,20 @@ namespace Lemon.WinPhone
                 {
                     throw new Exception("Failed to create initial page");
                 }
-            }
+            }*/
 
             // Ensure the current window is active
             Window.Current.Activate();
         }
 
         /// <summary>
-        /// Restores the content transitions after the app has launched.
+        /// Restores the content _transitions after the app has launched.
         /// </summary>
         /// <param name="sender">The object where the handler is attached.</param>
         /// <param name="e">Details about the navigation event.</param>
         private void RootFrame_FirstNavigated(object sender, NavigationEventArgs e)
         {
-            var rootFrame = sender as Frame;
+            var rootFrame = sender as Windows.UI.Xaml.Controls.Frame;
             rootFrame.ContentTransitions = this.transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
             rootFrame.Navigated -= this.RootFrame_FirstNavigated;
         }

@@ -1,6 +1,4 @@
-﻿using Android.App;
-using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Lemon
 {
