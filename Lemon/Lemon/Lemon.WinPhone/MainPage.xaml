@@ -8,4 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Hello World, Click Me!" x:Name="Button" />
+        </StackPanel>
+
 </forms:WindowsPhonePage>

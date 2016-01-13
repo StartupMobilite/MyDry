@@ -79,31 +79,30 @@ namespace Lemon.WinPhone
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
             }
-            /*
-            if (rootFrame.Content == null)
+            
+            if (Window.Current.Content == null)
             {
-
                 // Removes the turnstile navigation for startup.
-                if (rootFrame.ContentTransitions != null)
+                if (Window.Current.Content.Transitions != null)
                 {
                     this.transitions = new TransitionCollection();
-                    foreach (var c in rootFrame.ContentTransitions)
+                    foreach (var c in Window.Current.Content.Transitions)
                     {
                         this.transitions.Add(c);
                     }
                 }
 
-                rootFrame.ContentTransitions = null;
-                rootFrame.Navigated += this.RootFrame_FirstNavigated;
+                rootFrame.Transitions = null;
+               // rootFrame.Navigated += this.RootFrame_FirstNavigated;
 
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(MainPage), e.Arguments))
-                {
-                    throw new Exception("Failed to create initial page");
-                }
-            }*/
+                //if (!rootFrame.Navigated(typeof(MainPage), e.Arguments))
+               // {
+               //     throw new Exception("Failed to create initial page");
+               // }
+            }
 
             // Ensure the current window is active
             Window.Current.Activate();
