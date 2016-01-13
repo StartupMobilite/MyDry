@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
+﻿using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 using Xamarin.Forms;
 
@@ -18,30 +6,17 @@ using Xamarin.Forms;
 
 namespace Lemon.WinPhone
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    /// 
-
-   /* public partial class MainPage : FormsApplicationPage
+    //public partial class MainPage : FormApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
+        int count = 1;
+
         public MainPage()
         {
             InitializeComponent();
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
             Forms.Init();
             LoadApplication(new Lemon.App());
-        }
-    }*/
-}
-    /*
-    public sealed partial class MainPage : Page
-    {
-        int count = 1;
-        public MainPage()
-        {
-            this.InitializeComponent();
-            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         /// <summary>
@@ -58,9 +33,12 @@ namespace Lemon.WinPhone
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
-            Button.Click += delegate {
+            Button.Click += delegate
+            {
                 var title = string.Format("{0} clicks!", count++);
                 Button.Content = title;
             };
         }
-    }*/
+    }
+}
+
