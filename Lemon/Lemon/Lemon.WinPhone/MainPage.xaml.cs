@@ -1,28 +1,55 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Xamarin.Forms;
-using System;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace Lemon.WinPhone
 {
-    
-
-    public sealed partial class MainPage 
- //   public partial class MainPage : Xamarin.Forms.Platform.WinPhone.FormsApplicationPage // superclass new in 1.3
-
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class MainPage : Page
     {
+        int count = 1;
+
         public MainPage()
         {
             this.InitializeComponent();
-          //  SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
-            //global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new Lemon.App()); // new in 1.3
+            this.NavigationCacheMode = NavigationCacheMode.Required;
+        }
 
+        /// <summary>
+        /// Invoked when this page is about to be displayed in a Frame.
+        /// </summary>
+        /// <param name="e">Event data that describes how this page was reached.
+        /// This parameter is typically used to configure the page.</param>
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // TODO: Prepare page for display here.
+
+            // TODO: If your application contains multiple pages, ensure that you are
+            // handling the hardware Back button by registering for the
+            // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
+            // If you are using the NavigationHelper provided by some templates,
+            // this event is handled for you.
+            Button.Click += delegate
+            {
+                var title = string.Format("{0} clicks!", count++);
+                Button.Content = title;
+            };
         }
     }
-
 }
-
