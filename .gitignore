@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/visualstudio,visualstudiocode
+# Created by https://www.gitignore.io/api/visualstudio,xamarinstudio,visualstudiocode
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -238,6 +238,12 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+
+### XamarinStudio ###
+bin/
+obj/
+*.userprefs
 
 
 ### VisualStudioCode ###
