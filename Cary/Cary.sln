@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cary", "C:\Users\anne-\Documents\Visual Studio 2015\Projects\Cary\Cary\Cary.csproj", "{5B18DDDB-3289-40AE-A8AB-BE98DD34A5A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cary", "Cary\Cary.csproj", "{5B18DDDB-3289-40AE-A8AB-BE98DD34A5A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaryApp", "C:\Users\anne-\Documents\Visual Studio 2015\Projects\Cary\CaryApp\CaryApp.csproj", "{75E0C540-81E4-450E-8E35-39C222C3C58D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaryApp", "CaryApp\CaryApp.csproj", "{75E0C540-81E4-450E-8E35-39C222C3C58D}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedProject", "C:\Users\anne-\Documents\Visual Studio 2015\Projects\Cary\SharedProject\SharedProject.shproj", "{9AE9C461-2365-4941-B410-5264C5F18A9D}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedProject", "SharedProject\SharedProject.shproj", "{9AE9C461-2365-4941-B410-5264C5F18A9D}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		C:\Users\anne-\Documents\Visual Studio 2015\Projects\Cary\SharedProject\SharedProject.projitems*{75e0c540-81e4-450e-8e35-39c222c3c58d}*SharedItemsImports = 4
-		C:\Users\anne-\Documents\Visual Studio 2015\Projects\Cary\SharedProject\SharedProject.projitems*{5b18dddb-3289-40ae-a8ab-be98dd34a5a4}*SharedItemsImports = 4
-		C:\Users\anne-\Documents\Visual Studio 2015\Projects\Cary\SharedProject\SharedProject.projitems*{9ae9c461-2365-4941-b410-5264c5f18a9d}*SharedItemsImports = 13
+		SharedProject\SharedProject.projitems*{75e0c540-81e4-450e-8e35-39c222c3c58d}*SharedItemsImports = 4
+		SharedProject\SharedProject.projitems*{5b18dddb-3289-40ae-a8ab-be98dd34a5a4}*SharedItemsImports = 4
+		SharedProject\SharedProject.projitems*{9ae9c461-2365-4941-b410-5264c5f18a9d}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
