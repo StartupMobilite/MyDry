@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+    <Grid x:Name="LayoutRoot"  Style="{StaticResource LayoutGridStyle}">
         <TextBox 
         Name="textBox1" 
         HorizontalAlignment="Left"

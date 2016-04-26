@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using MvvmCross.Platform;
 
@@ -35,8 +36,10 @@ namespace CaryApp
         public App()
         {
             this.InitializeComponent();
-            this.Suspending += this.OnSuspending;
+            this.Suspending += this.OnSuspending; 
+
         }
+
 
         /// <summary>
         /// Invoqué lorsque l'application est lancée normalement par l'utilisateur final.  D'autres points d'entrée
@@ -53,6 +56,8 @@ namespace CaryApp
             }
 #endif
 
+
+    
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Ne répétez pas l'initialisation de l'application lorsque la fenêtre comporte déjà du contenu,
