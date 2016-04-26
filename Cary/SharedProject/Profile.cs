@@ -21,4 +21,5 @@ namespace SharedProject
         private string Old { get; set; }
         private string Morphology { get; set; }
     }
+
 }

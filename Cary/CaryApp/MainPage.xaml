@@ -8,6 +8,31 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-       </Grid>
+    <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+        <TextBox 
+        Name="textBox1" 
+        HorizontalAlignment="Left"
+        Height="72" 
+        Margin="0,22,0,0" 
+        TextWrapping="Wrap" 
+        Text="Enter text here." 
+        VerticalAlignment="Top" Width="456"/>
+        <Button 
+        Name="btnWrite" 
+        Content="Write"
+        HorizontalAlignment="Left" 
+        Margin="10,94,0,0" 
+        VerticalAlignment="Top"
+        Width="156" 
+        Click="btnWrite_Click"/>
+        <TextBlock 
+        Name="textBlock1" 
+        HorizontalAlignment="Left"
+        Margin="10,293,0,0" 
+        TextWrapping="Wrap" Text=""
+        VerticalAlignment="Top" 
+        Height="61" 
+        Width="436"/>
+        
+    </Grid>
 </Page>
