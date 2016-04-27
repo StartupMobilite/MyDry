@@ -23,19 +23,13 @@ namespace CaryApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
-
+          
+      
         public MainPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
          }
-
-        void Page_Load(object source, EventArgs e)
-        {
-           
-        }
-
-
 
         /// <summary>
         /// Invoqué lorsque cette page est sur le point d'être affichée dans un frame.

@@ -9,8 +9,23 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="LayoutRoot"  Style="{StaticResource LayoutGridStyle}">
-        <TextBlock x:Name="LoadText" HorizontalAlignment="Left" Margin="147,254,0,0" TextWrapping="Wrap" Text="Cary" VerticalAlignment="Top" Height="94" Width="105" FontSize="51"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"/>
 
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel Margin="0,57,0,0">
+                <TextBlock HorizontalAlignment="Center" Height="75" Margin="128,0,112.833,0" FontSize="42.667" Width="135">
+                	<Run Text="Cary" FontSize="56"/>
+                </TextBlock>
+                <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Une vie plus saine, en toute facilité" Margin="0,0,-1.167,0" TextAlignment="Center" FontSize="18.667" FontFamily="Arial"/>
+                <TextBox x:Name="Login" Text="Email" Margin="26,9.5,24.833,9.5"/>
+                <TextBox x:Name="Pass" Text="Password" Margin="26,9.5,24.833,9.5"/>
+                <Button Content="Sign In" Click="Button_Tap" Width="231" Margin="80,0,0,0" Height="71" Background="#FFE52626" BorderBrush="#FFE02727" />
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>
