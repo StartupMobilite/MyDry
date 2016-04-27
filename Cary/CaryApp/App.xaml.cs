@@ -55,10 +55,10 @@ namespace CaryApp
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-
-
     
-            Frame rootFrame = Window.Current.Content as Frame;
+
+
+                Frame rootFrame = Window.Current.Content as Frame;
 
             // Ne répétez pas l'initialisation de l'application lorsque la fenêtre comporte déjà du contenu,
             // assurez-vous juste que la fenêtre est active
@@ -81,7 +81,7 @@ namespace CaryApp
                 // Placez le frame dans la fenêtre active
                 Window.Current.Content = rootFrame;
             }
-
+             
             if (rootFrame.Content == null)
             {
                 

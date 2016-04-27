@@ -27,10 +27,14 @@ namespace CaryApp
         public MainPage()
         {
             this.InitializeComponent();
-
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            
+         }
+
+        void Page_Load(object source, EventArgs e)
+        {
+           
         }
+
 
 
         /// <summary>
@@ -40,6 +44,8 @@ namespace CaryApp
         /// Ce paramètre est généralement utilisé pour configurer la page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+
+
             // TODO: préparer la page pour affichage ici.
 
             // TODO: si votre application comporte plusieurs pages, assurez-vous que vous
