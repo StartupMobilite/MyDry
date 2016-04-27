@@ -21,10 +21,13 @@
                 <TextBlock HorizontalAlignment="Center" Height="75" Margin="128,0,112.833,0" FontSize="42.667" Width="135">
                 	<Run Text="Cary" FontSize="56"/>
                 </TextBlock>
-                <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Une vie plus saine, en toute facilité" Margin="0,0,-1.167,0" TextAlignment="Center" FontSize="18.667" FontFamily="Arial"/>
+                <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Une vie plus saine, en toute facilité" Margin="0,0,-1.167,0" TextAlignment="Center" FontSize="18.667" FontFamily="Arial" Height="48"/>
                 <TextBox x:Name="Login" Text="Email" Margin="26,9.5,24.833,9.5"/>
                 <TextBox x:Name="Pass" Text="Password" Margin="26,9.5,24.833,9.5"/>
                 <Button Content="Sign In" Click="Button_Tap" Width="231" Margin="80,0,0,0" Height="71" Background="#FFE52626" BorderBrush="#FFE02727" />
+                <Button Content="facebook" Click="Button_Tap" Width="231" Margin="80,0,0,0" Height="71" Background="#FF3B5998" BorderBrush="#FF3B5998" />
+                <TextBlock x:Name="CreateAccount" Text="Create an Account" Margin="26,9.5,244.833,9.5" Height="15"/>
+                <TextBlock x:Name="NeedHelp" Text="Need Help?" Margin="26,9.5,242.833,9.5" Height="16"/>
             </StackPanel>
         </Grid>
     </Grid>
